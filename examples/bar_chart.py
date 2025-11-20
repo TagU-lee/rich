@@ -73,5 +73,33 @@ vertical = BarChart(
     label_style="bold",
 )
 print(vertical)
-#python -m examples.bar_chart
+ 
+print("\n[bold]Example 7: Grouped Horizontal Bars[/bold]")
+grouped_quarters = {
+    "Q1": {"North": 32, "South": 28, "East": 25},
+    "Q2": {"North": 38, "South": 30, "East": 29},
+    "Q3": {"North": 34, "South": 35, "East": 30},
+    "Q4": {"North": 40, "South": 37, "East": 33},
+}
+chart7 = BarChart(
+    grouped_quarters,
+    width=70,
+    show_values=True,
+    bar_width=2,
+    group_styles=["red", "green", "cyan"],
+    label_style="bold",
+    value_style="dim",
+)
+print(chart7)
 
+print("\n[bold]Example 8: Grouped Vertical Bars[/bold]")
+chart8 = BarChart(
+    grouped_quarters,
+    orientation="vertical",
+    chart_height=12,
+    bar_width=2,
+    group_gap=2,
+    group_styles=["red", "green", "cyan"],
+    label_style="bold",
+)
+print(chart8)
