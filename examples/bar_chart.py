@@ -63,5 +63,15 @@ chart5 = BarChart(
 panel = Panel(chart5, title="Programming Language Popularity", border_style="blue")
 print(panel)
 
+print("\n[bold]Example 6: Vertical Bar Chart[/bold]")
+vertical = BarChart(
+    {"Jan": 3, "Feb": 7, "Mar": 5, "Apr": 9},
+    orientation="vertical",
+    chart_height=8,
+    bar_width=2,
+    bar_styles=["cyan", "magenta", "yellow", "green"],
+    label_style="bold",
+)
+print(vertical)
 #python -m examples.bar_chart
 
